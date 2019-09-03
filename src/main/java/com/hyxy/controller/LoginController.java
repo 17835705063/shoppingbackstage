@@ -25,7 +25,6 @@ public class LoginController {
 		//查询用户是否存在
 		User user =  LoginService.login(map);
 		System.out.println(user);
-		
 		if (user != null) {
 			request.getSession().setAttribute("user", user);
 		}else {
